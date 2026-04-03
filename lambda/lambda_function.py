@@ -9,7 +9,7 @@ INPUT_BUCKET = os.environ["INPUT_BUCKET"]
 OUTPUT_BUCKET = os.environ["OUTPUT_BUCKET"]
 VOICE_ID = os.environ.get("VOICE_ID", "Joanna")
 
-MAX_CHARS = 2800  # safe chunk size under Polly limits
+MAX_CHARS = 3000  # safe chunk size under Polly limits
 
 
 def split_text(text: str, max_chars: int = MAX_CHARS):
