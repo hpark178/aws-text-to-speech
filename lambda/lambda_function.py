@@ -46,6 +46,7 @@ def lambda_handler(event, context):
 
     output_keys = []
 
+    # Amazon Polly datapipeline 
     for i, part in enumerate(parts, start=1):
         resp = polly.synthesize_speech(
             Text=part,
